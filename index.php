@@ -81,49 +81,78 @@
                 <div class="col-md-10 ysofa-banner">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/banner.png" alt="">
                     <div class="collapse-menu-container">
+                        <ul class="nav navbar-nav">
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/garages.png"><br>garages</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/fenetres.png"><br>fenêtres</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/portes.png"><br>portes</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/stores.png"><br>stores</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/volets.png"><br>volets</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/portails.png"><br>portails</a></li>
+                            <li><a><img src="<?php echo get_template_directory_uri(); ?>/images/verandas.png"><br>vérandas</a></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- /.col-md-8 -->
             </div>
             <!-- /.row -->
             <hr>
-            <!-- Call to Action Well -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="well text-center">
-                        This is a well that is a great spot for a business tagline or phone number for easy access!
+            <!-- Content Row -->
+            <div class="row ysofa-body">
+                <div class="col-md-4 ysofa-left-body">
+                    <button class="btn btn-lg btn-ysofa">VOTRE DEVIS GRATUIT ICI</button>
+                    <div class="body-item margin-top-25">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>YSOFA, le spécialiste de la</span></a><br>
+                                    <a href=""><span>Fermeture du Bâtiment</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Des équipes professionnelles </span></a><br>
+                                    <a href=""><span>hautement qualifiées</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Ysofa s’engage</span></a><br>
+                                    <a href=""><span>pour les particuliers</span></a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <!-- Content Row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Heading 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                    <a class="btn btn-default" href="#">More Info</a>
-                </div>
                 <!-- /.col-md-4 -->
-                <div class="col-md-4">
-                    <h2>Heading 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                    <a class="btn btn-default" href="#">More Info</a>
-                </div>
-                <!-- /.col-md-4 -->
-                <div class="col-md-4">
-                    <h2>Heading 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                    <a class="btn btn-default" href="#">More Info</a>
+                <div class="col-md-8">
+                    <div style="width:200px;height:200px;border:solid #8AC58C;"></div>
+                    <button class="btn btn-ysofa" style="margin-left: 50px; margin-top: 20px;">Something</button>
                 </div>
                 <!-- /.col-md-4 -->
             </div>
             <!-- /.row -->
             <!-- Footer -->
             <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; Your Website 2014</p>
+                <div class="row ysofa-footer">
+                    <div class="col-lg-3">
+                        <div>------contacts------</div>
+                        <div>
+                        	<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png">
+                        	<img src="<?php echo get_template_directory_uri(); ?>/images/insta.png">
+                        	<img src="<?php echo get_template_directory_uri(); ?>/images/gplus.png">
+                        	<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>------mentions légales------</div>
+                        <div>------conditions de vente------</div>
+                        <div>------plan du site------</div>
+                        <div>------l’ avis du technicien------</div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>------FAQ------</div>
+                        <div>Comment puis-je contacter un technicien?</div>
+                        <div>Comment suivre ma commande?</div>
+                        <div>J’ai un problème avec mon installation.</div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>------sponsor------</div>
                     </div>
                 </div>
             </footer>

@@ -15,8 +15,24 @@
     src: url(fonts/HKGrotesk-Regular.otf);
 }
 
+body {
+    font-family: HKGrotesk;
+    font-weight: bold;
+}
+
 footer {
     padding: 30px 0;
+}
+
+.ysofa-body {
+    background-color: #EAF6E8;
+    padding: 30px 10px;
+}
+
+.ysofa-footer {
+    background-color: #60BA8A;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 .ysofa-site-header {
@@ -27,11 +43,41 @@ footer {
     padding: 0;
 }
 
+.btn-ysofa {
+    color: #333;
+    background-color: #A6C9A6;
+    border-color: #ccc;
+}
+
+.btn-ysofa:hover,
+.btn-ysofa:active,
+.btn-ysofa:focus {
+    color: #333;
+    background-color: #C0E3C0;
+    border-color: #adadad;
+}
+
 .collapse-menu-container {
     height: 100px;
     background: -moz-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
     background: -webkit-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
     background: linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
+    padding: 10px 70px 0px 70px;
+}
+
+.collapse-menu-container a {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.collapse-menu-container img {
+    height: 40px;
+}
+
+.collapse-menu-container ul {
+    float: right;
 }
 
 .sidebar-wrapper li {
@@ -47,9 +93,30 @@ footer {
 
 .sidebar-wrapper li a {
     color: black;
-    font-family: HKGrotesk;
     font-weight: bold;
     font-size: large;
+}
+
+.ysofa-left-body{
+    border-right: solid #8AC58C;
+}
+
+.body-item li {
+    list-style: none;
+    margin-right: 55px;
+    border-left: solid #8AC58C;
+    margin-bottom: 20px;
+}
+
+.body-item ul {
+    padding-left: 0px;
+}
+
+.body-item li a {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 10px;
 }
 
 .ysofa-navigation {
