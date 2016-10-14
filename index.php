@@ -11,46 +11,97 @@
  *
  * @package Ysofa
  */
+?>
+    <!DOCTYPE html>
+    <html <?php language_attributes(); ?>>
 
-get_header(); ?>
+    <head>
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <?php 
+	        global $wp_scripts, $wp_styles;
+			$wp_scripts = new WP_Scripts();
+			$wp_styles = new WP_Styles();
+			remove_action('wp_head', '_admin_bar_bump_cb');
+			remove_action('wp_head', 'print_emoji_detection_script', 7);
+			remove_action('wp_print_styles', 'print_emoji_styles');
+			remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+			remove_action( 'admin_print_styles', 'print_emoji_styles' );
+			remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
+        	wp_head(); 
+        ?>
+    </head>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <body>
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Heading Row -->
+            <div class="row ysofa-site-header">
+                <div class="col-md-3">
+                    <h1>Business Name or Tagline</h1>
+                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                    <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-9 ysofa-banner">
+                    <img class="img-responsive img-rounded" src="<?php echo get_template_directory_uri(); ?>/images/Ysofa-menu-fenetres-38.png" alt="">
+                    <div class="collapse-menu-container">
+                       
+                    </div>
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+            <hr>
+            <!-- Call to Action Well -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well text-center">
+                        This is a well that is a great spot for a business tagline or phone number for easy access!
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <!-- Content Row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Heading 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
+                    <a class="btn btn-default" href="#">More Info</a>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <h2>Heading 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
+                    <a class="btn btn-default" href="#">More Info</a>
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <h2>Heading 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
+                    <a class="btn btn-default" href="#">More Info</a>
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Your Website 2014</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+    </html>

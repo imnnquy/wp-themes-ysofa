@@ -36,4 +36,5 @@ function ysofa_pingback_header() {
 		echo '<link rel="pingback" href="', bloginfo( 'pingback_url' ), '">';
 	}
 }
+
 add_action( 'wp_head', 'ysofa_pingback_header' );
