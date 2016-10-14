@@ -2,14 +2,125 @@ footer {
     padding: 30px 0;
 }
 
-.ysofa-site-header{
+.ysofa-site-header {
     background-color: #42B180;
 }
 
-.ysofa-banner{
+.ysofa-banner {
     padding: 0;
 }
 
-.collapse-menu-container{
+.collapse-menu-container {
     height: 100px;
+    background: -moz-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
+    background: -webkit-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
+    background: linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
+}
+
+.ysofa-navigation {
+    padding: 0px
+}
+
+.ysofa-logo {
+    border-bottom: solid 15px white;
+}
+
+.ysofa-logo img {
+    max-width: 150px;
+}
+
+.margin-top-05 {
+    margin-top: 0.5em;
+}
+
+.margin-top-10 {
+    margin-top: 1.0em;
+}
+
+.margin-top-15 {
+    margin-top: 1.5em;
+}
+
+.margin-top-20 {
+    margin-top: 2.0em;
+}
+
+.margin-top-25 {
+    margin-top: 2.5em;
+}
+
+.margin-top-30 {
+    margin-top: 3.0em;
+}
+
+.margin-bottom-05 {
+    margin-bottom: 0.5em;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 1.0em;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 1.5em;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 2.0em;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 2.5em;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 3.0em;
+}
+
+.padding-top-05 {
+    padding-top: 0.5em;
+}
+
+.padding-top-10 {
+    padding-top: 1.0em;
+}
+
+.padding-top-15 {
+    padding-top: 1.5em;
+}
+
+.padding-top-20 {
+    padding-top: 2.0em;
+}
+
+.padding-top-25 {
+    padding-top: 2.5em;
+}
+
+.padding-top-30 {
+    padding-top: 3.0em;
+}
+
+.padding-bottom-05 {
+    padding-bottom: 0.5em;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 1.0em;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 1.5em;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 2.0em;
+}
+
+.padding-bottom-25 {
+    padding-bottom: 2.5em;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 3.0em;
 }

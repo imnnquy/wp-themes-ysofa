@@ -40,14 +40,13 @@
         <div class="container">
             <!-- Heading Row -->
             <div class="row ysofa-site-header">
-                <div class="col-md-3">
-                    <h1>Business Name or Tagline</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+                <div class="col-md-2 ysofa-navigation">
+                    <div class="text-center padding-top-15 padding-bottom-15 ysofa-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></div>
+                    <div></div>
                 </div>
                 <!-- /.col-md-4 -->
-                <div class="col-md-9 ysofa-banner">
-                    <img class="img-responsive img-rounded" src="<?php echo get_template_directory_uri(); ?>/images/Ysofa-menu-fenetres-38.png" alt="">
+                <div class="col-md-10 ysofa-banner">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/Ysofa-menu-fenetres-38.png" alt="">
                     <div class="collapse-menu-container">
                        
                     </div>
