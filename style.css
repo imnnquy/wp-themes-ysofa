@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "HKGrotesk";
+    src: url(fonts/HKGrotesk-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "HKGrotesk";
+    src: url(fonts/HKGrotesk-Light.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "HKGrotesk";
+    src: url(fonts/HKGrotesk-Regular.otf);
+}
+
 footer {
     padding: 30px 0;
 }
@@ -15,6 +32,24 @@ footer {
     background: -moz-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
     background: -webkit-linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
     background: linear-gradient(to bottom, #DBFFFF 0%, #42B180 50%);
+}
+
+.sidebar-wrapper li {
+    list-style: none;
+    margin-right: 55px;
+    border-bottom: solid white;
+    margin-bottom: 20px;
+}
+
+.sidebar-wrapper ul {
+    padding-left: 30px;
+}
+
+.sidebar-wrapper li a {
+    color: black;
+    font-family: HKGrotesk;
+    font-weight: bold;
+    font-size: large;
 }
 
 .ysofa-navigation {

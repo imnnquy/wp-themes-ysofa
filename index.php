@@ -42,13 +42,45 @@
             <div class="row ysofa-site-header">
                 <div class="col-md-2 ysofa-navigation">
                     <div class="text-center padding-top-15 padding-bottom-15 ysofa-logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></div>
-                    <div></div>
+                    <div class="sidebar-wrapper margin-top-25">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#"><span >Accueil</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Réalisations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Particuliers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Artisans</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
                 <!-- /.col-md-4 -->
                 <div class="col-md-10 ysofa-banner">
-                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/Ysofa-menu-fenetres-38.png" alt="">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/banner.png" alt="">
                     <div class="collapse-menu-container">
-                       
                     </div>
                 </div>
                 <!-- /.col-md-8 -->
