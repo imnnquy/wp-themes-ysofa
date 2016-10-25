@@ -9,9 +9,9 @@ This is a Wordpress theme, just zip all of them then install to your WP site
 ## Contributors
 
 Quy Nguyen
-https://twitter.com/ngcqunguyn
-https://www.facebook.com/ngocquynguyen
-https://vn.linkedin.com/in/quy-nguyen-82412663
+https://twitter.com/ngcqunguyn  
+https://www.facebook.com/ngocquynguyen  
+https://vn.linkedin.com/in/quy-nguyen-82412663  
 
 ## License
 
